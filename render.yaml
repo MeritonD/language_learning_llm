@@ -4,9 +4,10 @@ services:
     env: python
     repo: https://github.com/MeritonD/language_learning_llm.git
     branch: master
+    rootDir: backend
     buildFilter:
       paths:
-        - backend/**
+      - backend/**
     buildCommand: "pip install -r requirements.txt"
     startCommand: "uvicorn main:app --host 0.0.0.0 --port $PORT"
     envVars:
@@ -18,9 +19,10 @@ services:
     env: node
     repo: https://github.com/MeritonD/language_learning_llm.git
     branch: master
+    rootDir: frontend
     buildFilter:
       paths:
-        - frontend/**
+      - frontend/**
     buildCommand: "npm install && npm run build"
     startCommand: "npx serve -s build"
     envVars:
