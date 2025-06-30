@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+websockets
+SQLAlchemy
+passlib[bcrypt]
+python-jose[cryptography]
+huggingface_hub
