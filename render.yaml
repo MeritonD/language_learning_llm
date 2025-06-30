@@ -3,7 +3,7 @@ services:
     name: backend
     env: python
     repo: https://github.com/MeritonD/language_learning_llm.git
-    branch: main
+    branch: master
     buildFilter:
       paths:
         - backend/**
@@ -17,7 +17,7 @@ services:
     name: frontend
     env: node
     repo: https://github.com/MeritonD/language_learning_llm.git
-    branch: main
+    branch: master
     buildFilter:
       paths:
         - frontend/**
